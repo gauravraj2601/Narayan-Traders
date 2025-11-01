@@ -1,6 +1,6 @@
 "use client"
 
-import { MessageCircle } from "lucide-react"
+import Image from "next/image"
 
 export default function WhatsAppButton() {
   const phoneNumber = "916206950933"
@@ -14,11 +14,17 @@ export default function WhatsAppButton() {
   return (
     <button
       onClick={handleWhatsAppClick}
-      className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover-lift z-40 transition-all duration-300"
+      className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover-lift z-40 transition-all duration-300"
       aria-label="Contact us on WhatsApp"
       title="Chat with us on WhatsApp"
     >
-      <MessageCircle className="w-6 h-6" />
+      <Image
+        src="../../whatsapp.png"  
+        alt="Narayan Traders Interior Solutions"
+        width={40}
+        height={40}
+        className="w-12 h-12" 
+      />
     </button>
   )
 }

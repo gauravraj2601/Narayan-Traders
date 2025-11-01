@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Phone, Mail, MapPin } from "lucide-react"
-import logo from "../../smallLogo.png"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -14,7 +13,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <div className="relative w-15 h-15">
                 <Image
-                  src={logo}
+                  src={"../../smallLogo.png"}
                   alt="Narayan Traders Logo"
                   width={60}
                   height={60}

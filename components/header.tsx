@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Menu, X } from "lucide-react"
-import logo from "../../smallLogo.png"
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [isSticky, setIsSticky] = useState(false)
@@ -37,14 +36,14 @@ export default function Header() {
           <Link href="#home" className="flex items-center gap-2 group">
             <div className="relative w-15 h-15">
               <Image
-                src={logo}
+                src={"../../smallLogo.png"}
                 alt="Narayan Traders Logo"
                 width={60}
                 height={60}
                 className="object-contain"
               />
             </div>
-            <div className="hidden sm:block">
+            <div>
               <h1 className="text-lg font-bold text-[#1a3a52] leading-tight">Narayan Traders</h1>
               <p className="text-xs text-[#64748b]">Interior Design</p>
             </div>
