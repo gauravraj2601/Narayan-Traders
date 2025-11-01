@@ -16,7 +16,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url(/placeholder.svg?height=1080&width=1920&query=modern%20interior%20PVC%20wall%20panels%20design)",
+            "url(/homeImg.png?height=1080&width=1920&query=modern%20interior%20PVC%20wall%20panels%20design)",
         }}
       >
         {/* Overlay */}

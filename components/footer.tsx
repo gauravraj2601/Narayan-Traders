@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Phone, Mail, MapPin } from "lucide-react"
+import logo from "../../smallLogo.png"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -11,12 +12,12 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="relative w-10 h-10">
+              <div className="relative w-15 h-15">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250823-WA0023-jtjYZWwTN1BTOQCeaYKCCd83F5s69G.jpg"
+                  src={logo}
                   alt="Narayan Traders Logo"
-                  width={40}
-                  height={40}
+                  width={60}
+                  height={60}
                   className="object-contain"
                 />
               </div>
@@ -69,7 +70,7 @@ export default function Footer() {
               <div className="flex gap-2">
                 <Phone className="w-5 h-5 flex-shrink-0 text-gray-300" />
                 <a href="tel:+916206950933" className="text-gray-300 hover:text-white transition-colors text-sm">
-                  +91 6206950933
+                  +91 6206950933 (Jitendra Kumar)
                 </a>
               </div>
               <div className="flex gap-2">

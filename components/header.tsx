@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Menu, X } from "lucide-react"
-
+import logo from "../../smallLogo.png"
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [isSticky, setIsSticky] = useState(false)
@@ -35,12 +35,12 @@ export default function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="#home" className="flex items-center gap-2 group">
-            <div className="relative w-10 h-10">
+            <div className="relative w-15 h-15">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250823-WA0023-jtjYZWwTN1BTOQCeaYKCCd83F5s69G.jpg"
+                src={logo}
                 alt="Narayan Traders Logo"
-                width={40}
-                height={40}
+                width={60}
+                height={60}
                 className="object-contain"
               />
             </div>

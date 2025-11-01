@@ -23,12 +23,12 @@ const products = [
     description: "Artistic decorative boards for unique interiors",
     image: "/decorative-pvc-boards-design.jpg",
   },
-  {
-    id: 4,
-    name: "Modular Furniture Panels",
-    description: "Versatile modular solutions for flexible spaces",
-    image: "/modular-furniture-pvc-panels.jpg",
-  },
+  // {
+  //   id: 4,
+  //   name: "Modular Furniture Panels",
+  //   description: "Versatile modular solutions for flexible spaces",
+  //   image: "/modular-furniture-pvc-panels.jpg",
+  // },
   {
     id: 5,
     name: "Designer Laminates",
@@ -65,7 +65,7 @@ export default function Products() {
   }, [])
 
   return (
-    <section id="products" className="py-16 sm:py-24 bg-white">
+    <section id="products" className="py-10 sm:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 fade-in-up">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#1a3a52] mb-4">Our Products</h2>
@@ -98,10 +98,11 @@ export default function Products() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#1a3a52] mb-2">{product.name}</h3>
                 <p className="text-gray-600 mb-4">{product.description}</p>
-                <button className="inline-flex items-center gap-2 text-[#1a3a52] font-semibold hover:gap-3 transition-all duration-200">
-                  Enquire Now
-                  <ArrowRight className="w-4 h-4" />
-                </button>
+                <a
+                href={"#contact"}
+                className="inline-flex items-center gap-2 text-[#1a3a52] font-semibold hover:gap-3 transition-all duration-200">
+                Enquire Now
+              </a>
               </div>
             </div>
           ))}
